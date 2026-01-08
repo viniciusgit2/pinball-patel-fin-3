@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinball Patel Fin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <h1 class="neon-title">PINBALL PATEL FIN</h1>
+                <select id="languageSelector" style="background: rgba(0,0,0,0.7); color: #0ff; border: 2px solid #0ff; padding: 8px; border-radius: 5px; font-family: 'Orbitron', monospace; cursor: pointer;">
+                    <option value="pt-BR">🇧🇷 Português</option>
+                    <option value="en-US">🇺🇸 English</option>
+                    <option value="es-ES">🇪🇸 Español</option>
+                    <option value="fr-FR">🇫🇷 Français</option>
+                    <option value="de-DE">🇩🇪 Deutsch</option>
+                    <option value="it-IT">🇮🇹 Italiano</option>
+                    <option value="ja-JP">🇯🇵 日本語</option>
+                    <option value="zh-CN">🇨🇳 中文</option>
+                    <option value="ru-RU">🇷🇺 Русский</option>
+                    <option value="ko-KR">🇰🇷 한국어</option>
+                </select>
+            </div>
+            <div class="score-board">
+                <div class="score-item">
+                    <span class="label">PONTOS:</span>
+                    <span class="value" id="score">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">BOLAS:</span>
+                    <span class="value" id="balls">3</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">HIGH SCORE:</span>
+                    <span class="value" id="highScore">0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-container">
+            <canvas id="gameCanvas"></canvas>
+            <div id="particles"></div>
+            
+            <div class="game-over" id="gameOver">
+                <h2 class="game-over-title">GAME OVER</h2>
+                <p class="final-score">Pontuação Final: <span id="finalScore">0</span></p>
+                <button class="neon-button" id="restartBtn">JOGAR NOVAMENTE</button>
+            </div>
+            
+            <div class="start-screen" id="startScreen">
+                <h2 class="start-title">BEM-VINDO AO PINBALL PATEL FIN</h2>
+                <div class="instructions">
+                    <p>⌨️ Setas <strong>ESQUERDA</strong> e <strong>DIREITA</strong>: Flippers laterais</p>
+                    <p>⌨️ Seta <strong>PARA CIMA</strong>: Flipper central</p>
+                    <p>⌨️ Tecla <strong>ESPAÇO</strong>: Lançar a bola (segure e solte)</p>
+                    <p>🎯 Acerte os bumpers e alvos para marcar pontos</p>
+                    <p>⚡ Combos aumentam sua pontuação!</p>
+                </div>
+                <button class="neon-button" id="startBtn">INICIAR JOGO</button>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <div class="control-hint">
+                <span class="key">←</span>
+                <span>Flipper Esquerdo</span>
+            </div>
+            <div class="control-hint">
+                <span class="key">↑</span>
+                <span>Flipper Central</span>
+            </div>
+            <div class="control-hint">
+                <span class="key">→</span>
+                <span>Flipper Direito</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="tradutor.js"></script>
+    <script src="audio.js"></script>
+    <script src="game.js"></script>
+    <script>
+        // Configurar seletor de idioma
+        document.getElementById('languageSelector').addEventListener('change', function(e) {
+            tradutor.mudarIdioma(e.target.value);
+        });
+        
+        // Definir idioma atual no seletor
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('languageSelector').value = tradutor.idiomaAtual;
+        });
+    </script>
+</body>
+</html>

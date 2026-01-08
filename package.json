@@ -1,0 +1,63 @@
+{
+  "name": "pinball-patel-fin",
+  "version": "3.0.0",
+  "description": "Jogo de Pinball com sistema de tradução multilíngue",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --linux --win --mac",
+    "build:linux": "electron-builder --linux",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac"
+  },
+  "keywords": [
+    "pinball",
+    "game",
+    "javascript"
+  ],
+  "author": {
+    "name": "Vinicius",
+    "email": "vinicius@example.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.1.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.viniciusgit2.pinball-patel-fin",
+    "productName": "Pinball Patel Fin",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!node_modules",
+      "!dist",
+      "!.git"
+    ],
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Game",
+      "icon": "icon.png"
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "icon.png"
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "category": "public.app-category.games",
+      "icon": "icon.png"
+    }
+  }
+}

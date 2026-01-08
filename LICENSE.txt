@@ -1,0 +1,154 @@
+COPYRIGHT LICENSE / LICENÇA DE DIREITOS AUTORAIS
+=================================================
+
+Copyright (c) 2025 Vinicius Patel Fin. All Rights Reserved.
+Todos os Direitos Reservados.
+
+ENGLISH:
+--------
+This software and associated documentation files (the "Software") are the 
+exclusive property of Vinicius Patel Fin. No part of this Software may be 
+modified, altered, adapted, or created derivative works from, in whole or 
+in part, without prior written permission from the copyright holder.
+
+Unauthorized modification, reproduction, distribution, or use of this 
+Software is strictly prohibited and constitutes a violation of copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+
+PORTUGUÊS:
+----------
+Este software e arquivos de documentação associados (o "Software") são 
+propriedade exclusiva de Vinicius Patel Fin. Nenhuma parte deste Software 
+pode ser modificada, alterada, adaptada ou ter obras derivadas criadas, 
+no todo ou em parte, sem permissão prévia por escrito do detentor dos 
+direitos autorais.
+
+A modificação, reprodução, distribuição ou uso não autorizado deste Software 
+é estritamente proibida e constitui violação da lei de direitos autorais.
+
+O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA 
+OU IMPLÍCITA, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, 
+ADEQUAÇÃO A UM PROPÓSITO ESPECÍFICO E NÃO VIOLAÇÃO.
+
+
+ESPAÑOL:
+--------
+Este software y archivos de documentación asociados (el "Software") son 
+propiedad exclusiva de Vinicius Patel Fin. Ninguna parte de este Software 
+puede ser modificada, alterada, adaptada o crear obras derivadas, en todo 
+o en parte, sin el permiso previo por escrito del titular de los derechos 
+de autor.
+
+La modificación, reproducción, distribución o uso no autorizado de este 
+Software está estrictamente prohibido y constituye una violación de la 
+ley de derechos de autor.
+
+EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA 
+O IMPLÍCITA, INCLUYENDO PERO NO LIMITADO A LAS GARANTÍAS DE COMERCIABILIDAD, 
+IDONEIDAD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN.
+
+
+FRANÇAIS:
+---------
+Ce logiciel et les fichiers de documentation associés (le "Logiciel") sont 
+la propriété exclusive de Vinicius Patel Fin. Aucune partie de ce Logiciel 
+ne peut être modifiée, altérée, adaptée ou avoir des œuvres dérivées créées, 
+en tout ou en partie, sans l'autorisation écrite préalable du détenteur des 
+droits d'auteur.
+
+La modification, reproduction, distribution ou utilisation non autorisée de 
+ce Logiciel est strictement interdite et constitue une violation de la loi 
+sur le droit d'auteur.
+
+LE LOGICIEL EST FOURNI "TEL QUEL", SANS GARANTIE D'AUCUNE SORTE, EXPRESSE 
+OU IMPLICITE, Y COMPRIS MAIS SANS S'Y LIMITER AUX GARANTIES DE QUALITÉ 
+MARCHANDE, D'ADÉQUATION À UN USAGE PARTICULIER ET DE NON-CONTREFAÇON.
+
+
+DEUTSCH:
+--------
+Diese Software und die zugehörigen Dokumentationsdateien (die "Software") 
+sind ausschließliches Eigentum von Vinicius Patel Fin. Kein Teil dieser 
+Software darf ohne vorherige schriftliche Genehmigung des Urheberrechtsinhabers 
+ganz oder teilweise modifiziert, verändert, angepasst oder abgeleitete Werke 
+erstellt werden.
+
+Die unbefugte Änderung, Vervielfältigung, Verbreitung oder Nutzung dieser 
+Software ist strengstens untersagt und stellt eine Verletzung des 
+Urheberrechts dar.
+
+DIE SOFTWARE WIRD "WIE BESEHEN" BEREITGESTELLT, OHNE JEGLICHE AUSDRÜCKLICHE 
+ODER STILLSCHWEIGENDE GEWÄHRLEISTUNG, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT 
+AUF DIE GEWÄHRLEISTUNG DER MARKTGÄNGIGKEIT, EIGNUNG FÜR EINEN BESTIMMTEN 
+ZWECK UND NICHTVERLETZUNG.
+
+
+ITALIANO:
+---------
+Questo software e i file di documentazione associati (il "Software") sono 
+di proprietà esclusiva di Vinicius Patel Fin. Nessuna parte di questo Software 
+può essere modificata, alterata, adattata o creare opere derivate, in tutto 
+o in parte, senza previa autorizzazione scritta del titolare del copyright.
+
+La modifica, riproduzione, distribuzione o uso non autorizzato di questo 
+Software è severamente vietato e costituisce violazione della legge sul 
+diritto d'autore.
+
+IL SOFTWARE VIENE FORNITO "COSÌ COM'È", SENZA GARANZIE DI ALCUN TIPO, ESPRESSE 
+O IMPLICITE, INCLUSE MA NON LIMITATE ALLE GARANZIE DI COMMERCIABILITÀ, 
+IDONEITÀ PER UNO SCOPO PARTICOLARE E NON VIOLAZIONE.
+
+
+日本語 (JAPANESE):
+-----------------
+このソフトウェアおよび関連するドキュメントファイル（「ソフトウェア」）は、
+Vinicius Patel Finの独占的財産です。本ソフトウェアのいかなる部分も、
+著作権者の事前の書面による許可なしに、全体的または部分的に変更、改変、
+改作、または派生物を作成することはできません。
+
+本ソフトウェアの無断での変更、複製、配布、または使用は厳禁されており、
+著作権法の違反を構成します。
+
+本ソフトウェアは「現状のまま」提供され、商品性、特定目的への適合性、
+非侵害性を含むがこれに限定されない、明示的または黙示的ないかなる
+保証もありません。
+
+
+中文 (CHINESE):
+--------------
+本软件及相关文档文件（"软件"）为 Vinicius Patel Fin 的专有财产。
+未经版权所有者事先书面许可，不得对本软件的任何部分进行修改、更改、
+改编或创建衍生作品，无论是全部还是部分。
+
+未经授权修改、复制、分发或使用本软件是严格禁止的，并构成对版权法的
+违反。
+
+本软件按"原样"提供，不提供任何明示或暗示的保证，包括但不限于对
+适销性、特定用途的适用性和不侵权的保证。
+
+
+РУССКИЙ (RUSSIAN):
+------------------
+Это программное обеспечение и связанные файлы документации ("Программное 
+обеспечение") являются исключительной собственностью Vinicius Patel Fin. 
+Никакая часть этого Программного обеспечения не может быть изменена, 
+модифицирована, адаптирована или использована для создания производных 
+работ, полностью или частично, без предварительного письменного разрешения 
+правообладателя.
+
+Несанкционированное изменение, воспроизведение, распространение или 
+использование этого Программного обеспечения строго запрещено и является 
+нарушением закона об авторском праве.
+
+ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ПРЕДОСТАВЛЯЕТСЯ "КАК ЕСТЬ", БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, 
+ЯВНЫХ ИЛИ ПОДРАЗУМЕВАЕМЫХ, ВКЛЮЧАЯ, НО НЕ ОГРАНИЧИВАЯСЬ ГАРАНТИЯМИ 
+ТОВАРНОЙ ПРИГОДНОСТИ, ПРИГОДНОСТИ ДЛЯ ОПРЕДЕЛЕННОЙ ЦЕЛИ И НЕНАРУШЕНИЯ ПРАВ.
+
+
+================================================================================
+NO MODIFICATIONS ALLOWED / MODIFICAÇÕES NÃO PERMITIDAS
+================================================================================
