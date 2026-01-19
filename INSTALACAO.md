@@ -1,4 +1,4 @@
-# 📦 Guia de Instalação - Pinball Patel Fin v3.0
+# 📦 Guia de Instalação - Pinball Patel Fin v3.2
 
 ## 🚀 Instalação Rápida
 
@@ -15,21 +15,21 @@ chmod +x install-linux.sh
 #### Ubuntu/Debian/Linux Mint:
 ```bash
 cd dist
-sudo dpkg -i pinball-patel-fin_3.0.0_amd64.deb
+sudo dpkg -i pinball-patel-fin_3.2.0_amd64.deb
 sudo apt-get install -f -y
 ```
 
 #### Arch Linux/Manjaro/Outras Distros (AppImage):
 ```bash
 cd dist
-chmod +x "Pinball Patel Fin-3.0.0.AppImage"
-./"Pinball Patel Fin-3.0.0.AppImage"
+chmod +x "Pinball Patel Fin-3.2.0.AppImage"
+./"Pinball Patel Fin-3.2.0.AppImage"
 ```
 
 **Instalação permanente do AppImage:**
 ```bash
 mkdir -p ~/.local/bin
-cp dist/"Pinball Patel Fin-3.0.0.AppImage" ~/.local/bin/pinball-patel-fin.AppImage
+cp dist/"Pinball Patel Fin-3.2.0.AppImage" ~/.local/bin/pinball-patel-fin.AppImage
 ```
 
 ---
@@ -44,13 +44,13 @@ cp dist/"Pinball Patel Fin-3.0.0.AppImage" ~/.local/bin/pinball-patel-fin.AppIma
 
 #### Instalador Completo:
 1. Vá para a pasta `dist`
-2. Duplo clique em `Pinball Patel Fin Setup 3.0.0.exe`
+2. Duplo clique em `Pinball Patel Fin Setup 3.2.0.exe`
 3. Siga as instruções na tela
 4. Procure por "Pinball Patel Fin" no Menu Iniciar
 
 #### Versão Portátil (sem instalação):
 1. Vá para a pasta `dist`
-2. Duplo clique em `Pinball Patel Fin 3.0.0.exe`
+2. Duplo clique em `Pinball Patel Fin 3.2.0.exe`
 3. O jogo inicia diretamente!
 
 💡 **Dica:** Você pode copiar o arquivo `.exe` portátil para qualquer pasta ou pendrive!
@@ -140,7 +140,7 @@ rm ~/.local/share/applications/pinball-patel-fin.desktop
 
 ### Linux: "Permissão negada" ao executar AppImage
 ```bash
-chmod +x "Pinball Patel Fin-3.0.0.AppImage"
+chmod +x "Pinball Patel Fin-3.2.0.AppImage"
 ```
 
 ### Windows: "O Windows protegeu seu PC"

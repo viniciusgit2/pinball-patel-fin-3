@@ -21,7 +21,7 @@ let combo = 0;
 let comboTimer = null;
 
 // Física
-const gravity = 0.4;
+const gravity = 0.3;
 const friction = 0.99;
 const bounceFactor = 0.8;
 
@@ -50,20 +50,20 @@ let launcher = {
 // Flippers
 let flippers = {
     left: {
-        x: canvas.width * 0.05,
-        y: canvas.height - 80,
-        width: 120,
-        height: 20,
+        x: canvas.width * 0.10,
+        y: canvas.height - 100,
+        width: 150,
+        height: 22,
         angle: 0.3,
         targetAngle: 0.3,
         active: false,
         pivot: 'left'
     },
     right: {
-        x: canvas.width * 0.82,
-        y: canvas.height - 80,
-        width: 120,
-        height: 20,
+        x: canvas.width * 0.78,
+        y: canvas.height - 100,
+        width: 150,
+        height: 22,
         angle: -0.3,
         targetAngle: -0.3,
         active: false,
@@ -71,9 +71,9 @@ let flippers = {
     },
     center: {
         x: canvas.width * 0.5,
-        y: canvas.height * 0.75,
-        width: 90,
-        height: 18,
+        y: canvas.height * 0.73,
+        width: 110,
+        height: 20,
         angle: 0,
         targetAngle: 0,
         active: false,

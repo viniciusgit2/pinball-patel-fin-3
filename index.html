@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pinball Patel Fin</title>
+    <title>PINBALL-PATEL-FIN 3.2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
             <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-                <h1 class="neon-title">PINBALL PATEL FIN</h1>
-                <select id="languageSelector" style="background: rgba(0,0,0,0.7); color: #0ff; border: 2px solid #0ff; padding: 8px; border-radius: 5px; font-family: 'Orbitron', monospace; cursor: pointer;">
+                <h1 class="neon-title">PINBALL-PATEL-FIN 3.2</h1>
+                <select id="languageSelector" style="background: rgba(0,0,0,0.7); color: #0ff; border: 2px solid #0ff; padding: 8px; border-radius: 5px; font-family: 'Orbitron', monospace; cursor: pointer; display: none;">
                     <option value="pt-BR">🇧🇷 Português</option>
                     <option value="en-US">🇺🇸 English</option>
                     <option value="es-ES">🇪🇸 Español</option>
@@ -50,7 +50,23 @@
                 <button class="neon-button" id="restartBtn">JOGAR NOVAMENTE</button>
             </div>
             
-            <div class="start-screen" id="startScreen">
+            <div class="language-modal" id="languageModal">
+                <h2 class="language-modal-title">🌍 SELECIONE SEU IDIOMA / SELECT YOUR LANGUAGE</h2>
+                <div class="language-grid">
+                    <button class="language-option" data-lang="pt-BR">🇧🇷 Português</button>
+                    <button class="language-option" data-lang="en-US">🇺🇸 English</button>
+                    <button class="language-option" data-lang="es-ES">🇪🇸 Español</button>
+                    <button class="language-option" data-lang="fr-FR">🇫🇷 Français</button>
+                    <button class="language-option" data-lang="de-DE">🇩🇪 Deutsch</button>
+                    <button class="language-option" data-lang="it-IT">🇮🇹 Italiano</button>
+                    <button class="language-option" data-lang="ja-JP">🇯🇵 日本語</button>
+                    <button class="language-option" data-lang="zh-CN">🇨🇳 中文</button>
+                    <button class="language-option" data-lang="ru-RU">🇷🇺 Русский</button>
+                    <button class="language-option" data-lang="ko-KR">🇰🇷 한국어</button>
+                </div>
+            </div>
+            
+            <div class="start-screen" id="startScreen" style="display: none;">
                 <h2 class="start-title">BEM-VINDO AO PINBALL PATEL FIN</h2>
                 <div class="instructions">
                     <p>⌨️ Setas <strong>ESQUERDA</strong> e <strong>DIREITA</strong>: Flippers laterais</p>
@@ -83,14 +99,41 @@
     <script src="audio.js"></script>
     <script src="game.js"></script>
     <script>
-        // Configurar seletor de idioma
-        document.getElementById('languageSelector').addEventListener('change', function(e) {
-            tradutor.mudarIdioma(e.target.value);
-        });
-        
-        // Definir idioma atual no seletor
+        // Modal de seleção de idioma
         document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('languageSelector').value = tradutor.idiomaAtual;
+            const languageModal = document.getElementById('languageModal');
+            const startScreen = document.getElementById('startScreen');
+            const languageSelector = document.getElementById('languageSelector');
+            const languageOptions = document.querySelectorAll('.language-option');
+            
+            // Verificar se já tem idioma salvo
+            const savedLanguage = localStorage.getItem('pinballIdioma');
+            if (savedLanguage) {
+                // Se já tem idioma salvo, pula o modal
+                languageModal.style.display = 'none';
+                startScreen.style.display = 'flex';
+                languageSelector.style.display = 'block';
+                languageSelector.value = savedLanguage;
+            }
+            
+            // Configurar botões de idioma
+            languageOptions.forEach(button => {
+                button.addEventListener('click', function() {
+                    const selectedLang = this.getAttribute('data-lang');
+                    tradutor.mudarIdioma(selectedLang);
+                    
+                    // Esconder modal e mostrar tela de início
+                    languageModal.style.display = 'none';
+                    startScreen.style.display = 'flex';
+                    languageSelector.style.display = 'block';
+                    languageSelector.value = selectedLang;
+                });
+            });
+            
+            // Configurar seletor de idioma do header
+            languageSelector.addEventListener('change', function(e) {
+                tradutor.mudarIdioma(e.target.value);
+            });
         });
     </script>
 </body>

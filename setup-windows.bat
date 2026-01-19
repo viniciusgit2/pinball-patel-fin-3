@@ -2,10 +2,10 @@
 REM ═══════════════════════════════════════════════════════════
 REM  Script de Instalação e Configuração - Pinball Patel Fin
 REM  Plataforma: Windows
-REM  Versão: 3.0
+REM  Versão: 3.2
 REM ═══════════════════════════════════════════════════════════
 
-title Pinball Patel Fin v3.0 - Setup Windows
+title Pinball Patel Fin v3.2 - Setup Windows
 color 0B
 chcp 65001 >nul
 
@@ -13,7 +13,7 @@ chcp 65001 >nul
 cls
 echo.
 echo ╔════════════════════════════════════════════════════╗
-echo ║     Pinball Patel Fin v3.0 - Setup Windows        ║
+echo ║     Pinball Patel Fin v3.2 - Setup Windows        ║
 echo ╚════════════════════════════════════════════════════╝
 echo.
 

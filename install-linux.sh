@@ -1,12 +1,12 @@
 #!/bin/bash
 # Script de instalação do Pinball Patel Fin para Linux
-# Versão: 3.0
+# Versão: 3.2
 # Autor: Vinicius
 
 set -e  # Parar em caso de erro
 
 echo "╔════════════════════════════════════════╗"
-echo "║   Instalador Pinball Patel Fin v3.0   ║"
+echo "║   Instalador Pinball Patel Fin v3.2   ║"
 echo "╚════════════════════════════════════════╝"
 echo ""
 

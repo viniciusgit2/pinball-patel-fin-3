@@ -6,14 +6,14 @@ const tradutor = {
     // Traduções disponíveis
     traducoes: {
         'pt-BR': {
-            titulo: 'PINBALL PATEL FIN',
+            titulo: 'PINBALL-PATEL-FIN 3.2',
             pontos: 'PONTOS:',
             bolas: 'BOLAS:',
             highScore: 'HIGH SCORE:',
             gameOver: 'GAME OVER',
             pontuacaoFinal: 'Pontuação Final:',
             jogarNovamente: 'JOGAR NOVAMENTE',
-            bemVindo: 'BEM-VINDO AO PINBALL PATEL FIN',
+            bemVindo: 'BEM-VINDO AO PINBALL-PATEL-FIN 3.2',
             instrucoes: {
                 setasLaterais: 'Setas <strong>ESQUERDA</strong> e <strong>DIREITA</strong>: Flippers laterais',
                 setaCima: 'Seta <strong>PARA CIMA</strong>: Flipper central',
@@ -26,14 +26,14 @@ const tradutor = {
         },
         
         'en-US': {
-            titulo: 'PINBALL PATEL FIN',
+            titulo: 'PINBALL-PATEL-FIN 3.2',
             pontos: 'SCORE:',
             bolas: 'BALLS:',
             highScore: 'HIGH SCORE:',
             gameOver: 'GAME OVER',
             pontuacaoFinal: 'Final Score:',
             jogarNovamente: 'PLAY AGAIN',
-            bemVindo: 'WELCOME TO PINBALL PATEL FIN',
+            bemVindo: 'WELCOME TO PINBALL-PATEL-FIN 3.2',
             instrucoes: {
                 setasLaterais: '<strong>LEFT</strong> and <strong>RIGHT</strong> Arrows: Side flippers',
                 setaCima: '<strong>UP</strong> Arrow: Center flipper',
@@ -46,14 +46,14 @@ const tradutor = {
         },
         
         'es-ES': {
-            titulo: 'PINBALL PATEL FIN',
+            titulo: 'PINBALL-PATEL-FIN 3.2',
             pontos: 'PUNTOS:',
             bolas: 'BOLAS:',
             highScore: 'PUNTUACIÓN ALTA:',
             gameOver: 'FIN DEL JUEGO',
             pontuacaoFinal: 'Puntuación Final:',
             jogarNovamente: 'JUGAR DE NUEVO',
-            bemVindo: 'BIENVENIDO A PINBALL PATEL FIN',
+            bemVindo: 'BIENVENIDO A PINBALL-PATEL-FIN 3.2',
             instrucoes: {
                 setasLaterais: 'Flechas <strong>IZQUIERDA</strong> y <strong>DERECHA</strong>: Flippers laterales',
                 setaCima: 'Flecha <strong>ARRIBA</strong>: Flipper central',
@@ -66,14 +66,14 @@ const tradutor = {
         },
         
         'fr-FR': {
-            titulo: 'PINBALL PATEL FIN',
+            titulo: 'PINBALL-PATEL-FIN 3.2',
             pontos: 'POINTS:',
             bolas: 'BALLES:',
             highScore: 'MEILLEUR SCORE:',
             gameOver: 'FIN DU JEU',
             pontuacaoFinal: 'Score Final:',
             jogarNovamente: 'REJOUER',
-            bemVindo: 'BIENVENUE À PINBALL PATEL FIN',
+            bemVindo: 'BIENVENUE À PINBALL-PATEL-FIN 3.2',
             instrucoes: {
                 setasLaterais: 'Flèches <strong>GAUCHE</strong> et <strong>DROITE</strong>: Flippers latéraux',
                 setaCima: 'Flèche <strong>HAUT</strong>: Flipper central',
@@ -86,14 +86,14 @@ const tradutor = {
         },
         
         'de-DE': {
-            titulo: 'PINBALL PATEL FIN',
+            titulo: 'PINBALL-PATEL-FIN 3.2',
             pontos: 'PUNKTE:',
             bolas: 'BÄLLE:',
             highScore: 'HÖCHSTPUNKTZAHL:',
             gameOver: 'SPIEL VORBEI',
             pontuacaoFinal: 'Endpunktzahl:',
             jogarNovamente: 'NOCHMAL SPIELEN',
-            bemVindo: 'WILLKOMMEN BEI PINBALL PATEL FIN',
+            bemVindo: 'WILLKOMMEN BEI PINBALL-PATEL-FIN 3.2',
             instrucoes: {
                 setasLaterais: '<strong>LINKS</strong> und <strong>RECHTS</strong> Pfeile: Seitenflossen',
                 setaCima: '<strong>NACH OBEN</strong> Pfeil: Mittlere Flosse',
@@ -106,14 +106,14 @@ const tradutor = {
         },
         
         'it-IT': {
-            titulo: 'PINBALL PATEL FIN',
+            titulo: 'PINBALL-PATEL-FIN 3.2',
             pontos: 'PUNTEGGIO:',
             bolas: 'PALLE:',
             highScore: 'PUNTEGGIO MASSIMO:',
             gameOver: 'FINE DEL GIOCO',
             pontuacaoFinal: 'Punteggio Finale:',
             jogarNovamente: 'GIOCA ANCORA',
-            bemVindo: 'BENVENUTO A PINBALL PATEL FIN',
+            bemVindo: 'BENVENUTO A PINBALL-PATEL-FIN 3.2',
             instrucoes: {
                 setasLaterais: 'Frecce <strong>SINISTRA</strong> e <strong>DESTRA</strong>: Flipper laterali',
                 setaCima: 'Freccia <strong>SU</strong>: Flipper centrale',
@@ -126,14 +126,14 @@ const tradutor = {
         },
         
         'ja-JP': {
-            titulo: 'PINBALL PATEL FIN',
+            titulo: 'PINBALL-PATEL-FIN 3.2',
             pontos: 'スコア:',
             bolas: 'ボール:',
             highScore: 'ハイスコア:',
             gameOver: 'ゲームオーバー',
             pontuacaoFinal: '最終スコア:',
             jogarNovamente: 'もう一度プレイ',
-            bemVindo: 'PINBALL PATEL FINへようこそ',
+            bemVindo: 'PINBALL-PATEL-FIN 3.2へようこそ',
             instrucoes: {
                 setasLaterais: '<strong>左</strong>と<strong>右</strong>の矢印: サイドフリッパー',
                 setaCima: '<strong>上</strong>矢印: 中央フリッパー',
@@ -146,14 +146,14 @@ const tradutor = {
         },
         
         'zh-CN': {
-            titulo: 'PINBALL PATEL FIN',
+            titulo: 'PINBALL-PATEL-FIN 3.2',
             pontos: '分数:',
             bolas: '球:',
             highScore: '最高分:',
             gameOver: '游戏结束',
             pontuacaoFinal: '最终分数:',
             jogarNovamente: '再玩一次',
-            bemVindo: '欢迎来到 PINBALL PATEL FIN',
+            bemVindo: '欢迎来到 PINBALL-PATEL-FIN 3.2',
             instrucoes: {
                 setasLaterais: '<strong>左</strong>和<strong>右</strong>箭头: 侧面挡板',
                 setaCima: '<strong>上</strong>箭头: 中央挡板',
@@ -166,14 +166,14 @@ const tradutor = {
         },
         
         'ru-RU': {
-            titulo: 'PINBALL PATEL FIN',
+            titulo: 'PINBALL-PATEL-FIN 3.2',
             pontos: 'ОЧКИ:',
             bolas: 'ШАРЫ:',
             highScore: 'РЕКОРД:',
             gameOver: 'ИГРА ОКОНЧЕНА',
             pontuacaoFinal: 'Финальный Счет:',
             jogarNovamente: 'ИГРАТЬ СНОВА',
-            bemVindo: 'ДОБРО ПОЖАЛОВАТЬ В PINBALL PATEL FIN',
+            bemVindo: 'ДОБРО ПОЖАЛОВАТЬ В PINBALL-PATEL-FIN 3.2',
             instrucoes: {
                 setasLaterais: 'Стрелки <strong>ВЛЕВО</strong> и <strong>ВПРАВО</strong>: Боковые флипперы',
                 setaCima: 'Стрелка <strong>ВВЕРХ</strong>: Центральный флиппер',
@@ -186,14 +186,14 @@ const tradutor = {
         },
         
         'ko-KR': {
-            titulo: 'PINBALL PATEL FIN',
+            titulo: 'PINBALL-PATEL-FIN 3.2',
             pontos: '점수:',
             bolas: '공:',
             highScore: '최고 점수:',
             gameOver: '게임 오버',
             pontuacaoFinal: '최종 점수:',
             jogarNovamente: '다시 플레이',
-            bemVindo: 'PINBALL PATEL FIN에 오신 것을 환영합니다',
+            bemVindo: 'PINBALL-PATEL-FIN 3.2에 오신 것을 환영합니다',
             instrucoes: {
                 setasLaterais: '<strong>왼쪽</strong> 및 <strong>오른쪽</strong> 화살표: 측면 플리퍼',
                 setaCima: '<strong>위</strong> 화살표: 중앙 플리퍼',
@@ -279,17 +279,15 @@ const tradutor = {
     
     // Inicializar tradutor
     inicializar: function() {
-        // Carregar idioma salvo ou detectar idioma do navegador
+        // Carregar idioma salvo
         const idiomaSalvo = localStorage.getItem('pinballIdioma');
-        const idiomaNavegador = navigator.language || navigator.userLanguage;
         
         if (idiomaSalvo && this.traducoes[idiomaSalvo]) {
             this.idiomaAtual = idiomaSalvo;
-        } else if (this.traducoes[idiomaNavegador]) {
-            this.idiomaAtual = idiomaNavegador;
+            this.aplicarTraducoes();
         }
-        
-        this.aplicarTraducoes();
+        // Não aplica idioma do navegador automaticamente,
+        // deixa o usuário escolher no modal
     },
     
     // Listar idiomas disponíveis

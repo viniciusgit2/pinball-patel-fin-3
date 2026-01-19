@@ -1,10 +1,10 @@
 @echo off
-title Instalador Pinball Patel Fin v3.0
+title Instalador Pinball Patel Fin v3.2
 color 0B
 
 echo.
 echo ╔════════════════════════════════════════╗
-echo ║   Instalador Pinball Patel Fin v3.0   ║
+echo ║   Instalador Pinball Patel Fin v3.2   ║
 echo ╚════════════════════════════════════════╝
 echo.
 

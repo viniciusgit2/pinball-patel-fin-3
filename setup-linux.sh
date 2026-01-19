@@ -2,7 +2,7 @@
 # ═══════════════════════════════════════════════════════════
 #  Script de Instalação e Configuração - Pinball Patel Fin
 #  Plataforma: Linux (Universal)
-#  Versão: 3.0
+#  Versão: 3.2
 # ═══════════════════════════════════════════════════════════
 
 set -e  # Parar em caso de erro
@@ -17,7 +17,7 @@ NC='\033[0m' # No Color
 # Funções auxiliares
 print_header() {
     echo -e "${BLUE}╔════════════════════════════════════════════════════╗${NC}"
-    echo -e "${BLUE}║     Pinball Patel Fin v3.0 - Setup Linux         ║${NC}"
+    echo -e "${BLUE}║     Pinball Patel Fin v3.2 - Setup Linux         ║${NC}"
     echo -e "${BLUE}╚════════════════════════════════════════════════════╝${NC}"
     echo ""
 }
