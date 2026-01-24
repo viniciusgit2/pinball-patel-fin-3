@@ -1,7 +1,7 @@
 {
   "name": "pinball-patel-fin",
-  "version": "3.2.0",
-  "description": "Jogo de Pinball com sistema de tradução multilíngue",
+  "version": "4.0.0",
+  "description": "Jogo de Pinball com sistema de tradução multilíngue e controles touch/mouse",
   "main": "main.js",
   "scripts": {
     "start": "electron .",

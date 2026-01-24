@@ -162,6 +162,166 @@ document.addEventListener('keyup', (e) => {
     }
 });
 
+// Função helper para verificar se ponto está sobre um flipper
+function isPointOnFlipper(x, y, flipper) {
+    // Criar retângulo de detecção ao redor do flipper
+    const padding = 20; // Área extra para facilitar cliques/toques
+    let hitBox;
+    
+    if (flipper.pivot === 'center') {
+        hitBox = {
+            x: flipper.x - flipper.width / 2 - padding,
+            y: flipper.y - flipper.height / 2 - padding,
+            width: flipper.width + padding * 2,
+            height: flipper.height + padding * 2
+        };
+    } else if (flipper.pivot === 'left') {
+        hitBox = {
+            x: flipper.x - padding,
+            y: flipper.y - flipper.height / 2 - padding,
+            width: flipper.width + padding * 2,
+            height: flipper.height + padding * 2
+        };
+    } else { // right
+        hitBox = {
+            x: flipper.x - padding,
+            y: flipper.y - flipper.height / 2 - padding,
+            width: flipper.width + padding * 2,
+            height: flipper.height + padding * 2
+        };
+    }
+    
+    return x >= hitBox.x && x <= hitBox.x + hitBox.width &&
+           y >= hitBox.y && y <= hitBox.y + hitBox.height;
+}
+
+// Função para ativar flipper
+function activateFlipper(flipperName) {
+    const flipper = flippers[flipperName];
+    if (!flipper) return;
+    
+    flipper.active = true;
+    
+    if (flipperName === 'left') {
+        flipper.targetAngle = -0.5;
+    } else if (flipperName === 'right') {
+        flipper.targetAngle = 0.5;
+    } else if (flipperName === 'center') {
+        flipper.targetAngle = -0.6;
+    }
+    
+    if (gameStarted) audioManager.playFlipperSound();
+}
+
+// Função para desativar flipper
+function deactivateFlipper(flipperName) {
+    const flipper = flippers[flipperName];
+    if (!flipper) return;
+    
+    flipper.active = false;
+    
+    if (flipperName === 'left') {
+        flipper.targetAngle = 0.3;
+    } else if (flipperName === 'right') {
+        flipper.targetAngle = -0.3;
+    } else if (flipperName === 'center') {
+        flipper.targetAngle = 0;
+    }
+}
+
+// Controles de mouse
+let mouseDownFlippers = new Set();
+
+canvas.addEventListener('mousedown', (e) => {
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    
+    // Verificar qual flipper foi clicado
+    if (isPointOnFlipper(x, y, flippers.left)) {
+        mouseDownFlippers.add('left');
+        activateFlipper('left');
+    }
+    if (isPointOnFlipper(x, y, flippers.right)) {
+        mouseDownFlippers.add('right');
+        activateFlipper('right');
+    }
+    if (isPointOnFlipper(x, y, flippers.center)) {
+        mouseDownFlippers.add('center');
+        activateFlipper('center');
+    }
+});
+
+canvas.addEventListener('mouseup', (e) => {
+    // Desativar todos os flippers que estavam ativos pelo mouse
+    mouseDownFlippers.forEach(flipperName => {
+        deactivateFlipper(flipperName);
+    });
+    mouseDownFlippers.clear();
+});
+
+canvas.addEventListener('mouseleave', (e) => {
+    // Desativar todos os flippers se o mouse sair do canvas
+    mouseDownFlippers.forEach(flipperName => {
+        deactivateFlipper(flipperName);
+    });
+    mouseDownFlippers.clear();
+});
+
+// Controles touchscreen
+let activeTouches = new Map(); // touchId -> flipperName
+
+canvas.addEventListener('touchstart', (e) => {
+    e.preventDefault(); // Prevenir comportamento padrão
+    const rect = canvas.getBoundingClientRect();
+    
+    for (let i = 0; i < e.changedTouches.length; i++) {
+        const touch = e.changedTouches[i];
+        const x = touch.clientX - rect.left;
+        const y = touch.clientY - rect.top;
+        
+        // Verificar qual flipper foi tocado
+        if (isPointOnFlipper(x, y, flippers.left)) {
+            activeTouches.set(touch.identifier, 'left');
+            activateFlipper('left');
+        } else if (isPointOnFlipper(x, y, flippers.right)) {
+            activeTouches.set(touch.identifier, 'right');
+            activateFlipper('right');
+        } else if (isPointOnFlipper(x, y, flippers.center)) {
+            activeTouches.set(touch.identifier, 'center');
+            activateFlipper('center');
+        }
+    }
+});
+
+canvas.addEventListener('touchend', (e) => {
+    e.preventDefault();
+    
+    for (let i = 0; i < e.changedTouches.length; i++) {
+        const touch = e.changedTouches[i];
+        const flipperName = activeTouches.get(touch.identifier);
+        
+        if (flipperName) {
+            deactivateFlipper(flipperName);
+            activeTouches.delete(touch.identifier);
+        }
+    }
+});
+
+canvas.addEventListener('touchcancel', (e) => {
+    e.preventDefault();
+    
+    for (let i = 0; i < e.changedTouches.length; i++) {
+        const touch = e.changedTouches[i];
+        const flipperName = activeTouches.get(touch.identifier);
+        
+        if (flipperName) {
+            deactivateFlipper(flipperName);
+            activeTouches.delete(touch.identifier);
+        }
+    }
+});
+
 // Funções de desenho
 function drawNeonCircle(x, y, radius, color, glow = true) {
     if (glow) {

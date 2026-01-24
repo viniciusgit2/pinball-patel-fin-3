@@ -1,4 +1,4 @@
-# Pinball Patel Fin 3.2
+# Pinball Patel Fin 4.0
 
 Jogo de Pinball com sistema de tradução multilíngue desenvolvido com Electron.
 
@@ -9,6 +9,8 @@ Jogo de Pinball com sistema de tradução multilíngue desenvolvido com Electron
 - Interface gráfica moderna
 - Efeitos sonoros
 - Sistema de pontuação
+- **Novo em 4.0:** Suporte completo para touchscreen
+- **Novo em 4.0:** Controle de flippers com mouse
 
 ## Instalação
 

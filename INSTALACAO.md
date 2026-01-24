@@ -1,4 +1,4 @@
-# 📦 Guia de Instalação - Pinball Patel Fin v3.2
+# 📦 Guia de Instalação - Pinball Patel Fin v4.0
 
 ## 🚀 Instalação Rápida
 
@@ -86,9 +86,22 @@ Após o build, instale o arquivo `.dmg` gerado em `dist/`.
 ## 🎮 Como Jogar
 
 ### Controles:
+
+**Teclado:**
 - **← →** - Flippers laterais
 - **↑** - Flipper central
 - **Espaço** - Lançar a bola (segure e solte para ajustar a força)
+
+**Mouse:**
+- **Clique** sobre qualquer flipper para ativá-lo
+- **Mantenha pressionado** para manter o flipper ativo
+- **Solte** para liberar o flipper
+
+**Touchscreen (dispositivos táteis):**
+- **Toque** sobre qualquer flipper para ativá-lo
+- **Mantenha pressionado** para manter o flipper ativo
+- **Solte** para liberar o flipper
+- Suporte para **multi-toque** - controle vários flippers simultaneamente!
 
 ### Objetivo:
 - Acerte os bumpers coloridos para ganhar pontos
